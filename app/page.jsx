@@ -38,14 +38,14 @@ const page = () => {
   return (
       <div className='bg-[#fafafa] h-screen overflow-hidden' style={roboto.style} >
         <div className='shadow-[0_3px_3px_0_rgba(0,0,0,.1)] relative z-10'>
-            <div className='bg-white px-10 py-3 flex items-center justify-between'>
+            <div className='bg-white sm:px-10 px-4 py-3 flex items-center justify-between'>
                 <Image
                     src={'/images/Nairarefill_logo.png'}
                     width={150}
                     height={150}
                     alt='Logo'
                 />
-                <div className='flex gap-4'>
+                <div className='flex sm:gap-4 gap-2'>
                     <Link href={'/'}
                         className='bg-[#f48023] text-white px-4 py-1 rounded-lg font-bold flex items-center gap-2'
                     >
