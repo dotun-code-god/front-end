@@ -47,12 +47,17 @@ const page = () => {
                 />
                 <div className='flex gap-4'>
                     <Link href={'/'}
-                        className='bg-[#f48023] text-white px-6 py-1 rounded-lg font-bold'
+                        className='bg-[#f48023] text-white px-4 py-1 rounded-lg font-bold flex items-center gap-2'
                     >
+                        <Image
+                            src={'/images/user_plus.fe0a78c5.svg'}
+                            width={15}
+                            height={15}
+                        />
                         Register
                     </Link>
                     <Link href={'/'}
-                          className='border-[#f48023] border-[0.1rem] py-1 px-3 rounded-lg font-bold text-[#f48023]'
+                          className='font-bold border-[#f48023] border-[0.1rem] py-1 px-3 rounded-lg text-[#f48023]'
                     >
                         Login
                     </Link>
@@ -61,7 +66,7 @@ const page = () => {
         </div>
 
         <div className='flex items-center gap-12'>
-            <div className='mt-24 ml-[10%] w-[23%]'>
+            <div className='mt-24 md:ml-[10%] mx-[8%] md:w-[25%] w-full'>
                 <p className='font-semibold text-xl -translate-y-8 text-green-500'>{success}</p>
                 <h1 className='text-3xl font-bold tracking-wide' style={robotoBold.style}>We've Missed You</h1>
                   <p className='pt-4 text-lg leading-6 tracking-wider text-[#2c2c2c] font-[600]'>
@@ -74,7 +79,7 @@ const page = () => {
                       <input type="password" id='password' className='w-full py-1 pl-2 border-[0.1rem] border-black' value={password} onChange={(e) => setPassword(e.target.value)} />
 
                     <div className='mt-12'>
-                        <button type='submit' className='bg-[#f48023] text-white w-full block text-center py-1'>
+                          <button type='submit' className='font-bold bg-[#f48023] text-white w-full block text-center py-1'>
                             Login
                         </button>
                     </div>
@@ -85,7 +90,7 @@ const page = () => {
                 </form>
             </div>
 
-            <div className='w-[75%] h-auto'>
+            <div className='w-[75%] h-auto md:block hidden'>
                 <Image 
                 className='absolute -bottom-0 right-0 -z-1'
                       src={'/images/signIn_img.png'}
@@ -102,6 +107,3 @@ const page = () => {
 }
 
 export default page
-
-// EMAIL_ADDRESS = dotun494@gmail.com
-// EMAIL_PASSWORD = tjbhiviiksuuffdf

