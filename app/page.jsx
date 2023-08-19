@@ -102,3 +102,6 @@ const page = () => {
 }
 
 export default page
+
+// EMAIL_ADDRESS = dotun494@gmail.com
+// EMAIL_PASSWORD = tjbhiviiksuuffdf
